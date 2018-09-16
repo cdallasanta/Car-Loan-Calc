@@ -1,6 +1,5 @@
 public class CarLoan {
 	public static void main(String[] args) {
-		//program to figure out monthly car payment
     
     int carLoan = 10000;
     int loanLength = 3;
