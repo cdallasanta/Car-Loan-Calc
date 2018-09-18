@@ -1,11 +1,22 @@
+import java.util.Scanner;
+
 public class CarLoan {
-	public static void main(String[] args) {
-    
-    int carLoan = 10000;
-    int loanLength = 3;
-    int interestRate = 5;
-    int downPayment = 2000;
+  public static void main(String[] args) {
 	
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter loan amount: ");
+	int carLoan = input.nextInt();
+			 
+	System.out.print("Enter loan length in years: ");		 
+	int loanLength = input.nextInt();
+	  
+	System.out.print("Enter interest rate: ");
+	int interestRate = input.nextInt();
+	  
+	System.out.print("Enter down payment: );
+	int downPayment = input.nextInt();
+	input.close();
+			 
     //figures out if it's a valid loan
     if (loanLength<=0 || interestRate<=0){
       System.out.println("Error! You must take out a valid car loan.");
